@@ -74,5 +74,9 @@ def verify_fb_token(token_sent):
         return request.args.get("hub.challenge")
     return 'Invalid verification token'
 
+# 5. Once we know what we are sending back to the user, 
+# we need to write a method that actually sends this message to the user. 
+# The PyMessenger library makes this easier for us by handling the POST requests per the Messenger API.
+
 
 
