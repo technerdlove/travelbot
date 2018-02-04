@@ -78,5 +78,10 @@ def verify_fb_token(token_sent):
 # we need to write a method that actually sends this message to the user. 
 # The PyMessenger library makes this easier for us by handling the POST requests per the Messenger API.
 
+def send_message(recipient_id, response):
+    #sends user the text message provided via input response parameter
+    bot.send_text_message(recipient_id, response)
+    return "success"
+
 
 
