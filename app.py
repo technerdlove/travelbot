@@ -1,6 +1,6 @@
 # ======= Coding Our Bot =========
 
-# Here I create a basic Flask app. 
+# 1. Here I create a basic Flask app. 
 # Flask is a web framework for Python, read more here: http://flask.pocoo.org/docs/0.12/quickstart/
 
 from flask import Flask, request
@@ -27,7 +27,7 @@ if __name__ == '__main__':
 # To handle sending messages back to a user who communicates with our bot, 
 # use the PyMessenger library to handle sending responses to users.
 # First need to handle two types of requests, GET and POST
-# we will use GET requests when Facebook checks the bot’s verify token
+# 2. we will use GET requests when Facebook checks the bot’s verify token
 
 if request.method == 'GET':
     # Before allowing people to message your bot, Facebook has implemented a verify token
@@ -40,7 +40,7 @@ if request.method == 'GET':
 # that they will use to verify the bot only responds to requests sent from Messenger. 
 
 
-# If the bot is not receiving a GET request, 
+# 3. If the bot is not receiving a GET request, 
 # it is likely receiving a POST request where Facebook is sending your bot a message sent by a user.
 
 # if the request was not get, it must be POST and we can just proceed with sending a message # back to user
