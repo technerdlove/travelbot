@@ -1,2 +1,2 @@
 # travelbot
-Facebook Messenger bot that provides travel recommendations 
+A Facebook Messenger bot that provides travel recommendations 
