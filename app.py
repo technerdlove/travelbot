@@ -63,5 +63,16 @@ if request.method == 'GET':
     return "Message Processed"
 
 
+# 4. we move on to handle verifying a message from Facebook as well as generating and sending a response back to the user. 
+# Facebook requires that your bot have a verify token that you also provide to them 
+# in order to ensure all requests your bot receives originated from them:
+
+def verify_fb_token(token_sent):
+    #take token sent by facebook and verify it matches the verify token you sent
+    #if they match, allow the request, else return an error 
+    if token_sent == VERIFY_TOKEN:
+        return request.args.get("hub.challenge")
+    return 'Invalid verification token'
+
 
 
