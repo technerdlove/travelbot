@@ -7,4 +7,5 @@ itsdangerous==0.24
 pymessenger==0.0.7.0 
 requests-toolbelt==0.8.0 
 six==1.11.0
+gunicorn==19.7.1
 
