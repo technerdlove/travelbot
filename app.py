@@ -41,7 +41,8 @@ def verify_fb_token(token_sent):
     #if they match, allow the request, else return an error 
     if token_sent == VERIFY_TOKEN:
         return request.args.get("hub.challenge")
-    return 'Invalid verification token'
+    else:
+        return 'Invalid verification token'
 
 
 #chooses a random message to send to the user
