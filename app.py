@@ -1,3 +1,12 @@
+# DEVELOPMENT ENVIRONMENT
+# Python 3.6 (you can download this here: https://www.python.org/downloads/)
+# Pip (you can download this here: https://pypi.python.org/pypi/pip)
+
+# Once you have downloaded the above files, you need to install the following libraries:
+# pip3 install Flask==0.12.2
+# pip3 install pymessenger==0.0.7.0
+
+
 # ======= Coding Our Bot =========
 
 # 1. Here I create a basic Flask app. 
