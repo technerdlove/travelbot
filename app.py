@@ -24,3 +24,7 @@ if __name__ == '__main__':
 
 # ======= From Basic Flask app to Bot =========
 
+# To handle sending messages back to a user who communicates with our bot, 
+# use the PyMessenger library to handle sending responses to users.
+# First need to handle two types of requests, GET and POST
+# we will use GET requests when Facebook checks the bot’s verify token
